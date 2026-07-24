@@ -13,6 +13,8 @@ const subLinks: Record<string, string> = {
   'IHRC': '/conference-ihrc',
   'CXO': '/conference-cxo',
   'BOWLD': '/conference-bowld',
+  'Advisory Board': '/advisory-board',
+  'Webinar / Seminar': '/webinar-seminar',
 };
 
 function isItemActive(item: { href?: string; children?: string[] }, pathname: string) {

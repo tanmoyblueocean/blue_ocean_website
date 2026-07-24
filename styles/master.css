@@ -18790,7 +18790,7 @@ position: absolute;
     position: relative;
     width: 100%;
     background-color: #FFFFFF;
-    padding: 60px 0 0 0;
+    padding: 160px 0 0 0;
     overflow: hidden;
 }
 
@@ -21441,6 +21441,594 @@ h2.why-text {
         height: 80px; /* Scales down the left graphic */
     }
 }
+
+/**Webinair**/
+.affiliation-headings {
+    position: relative;
+    width: 100%;
+    /* The image acts as the background for the entire section */
+    background: url('/images/webinar-pic.png') center/cover no-repeat;
+    background-color: #040e2b;
+    overflow: hidden;
+    padding-top: 79px;
+}
+
+/* Top Left Concept Icon */
+.concept-icon {
+  position: absolute;
+  top: 20px; /* Matches the top padding of the .webinair-top section */
+  left: 0;
+  width: 120px; /* Adjust this width based on the actual image proportions */
+  height: auto;
+  z-index: 10;
+}
+
+.webinair-top {
+  width: 100%; /* Forces 100% screen width */
+  max-width: 100%; /* Removes previous 1200px limit */
+  margin: 60px 0 0;
+  padding: 20px 0; /* Removed horizontal padding so the left panel touches the edge */
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.webinair-header {
+  margin-bottom: 20px;
+  padding-left: 10%; /* Keeps text aligned relative to the banner */
+}
+
+.webinair-header .sub-headingg {
+ color: #0C1896;
+ font-size: 1.5vw;
+  margin: 0;
+  font-weight: 500;
+}
+
+.webinair-header .main-headingg {
+  color: var(--primary-blue);
+    margin-top: 5px;
+    font-weight: 700;
+    color: #0C1896;
+    margin-bottom: 1vw;
+    line-height: 1.2;
+    font-size: 2.08vw;
+}
+
+/* Hero Banner */
+.webinair-banner {
+  position: relative;
+  width:80%;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-imagee {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 31, 122, 0.3); /* Slight blue tint over the image */
+}
+
+.banner-overlayy h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+/* Content Wrapper Layout */
+.webinair-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Left Panel (Triangle) */
+.webinair-left-panel {
+  width: 35%; /* Adjusted slightly for better text fit */
+  position: relative;
+}
+
+.triangle-bgg {
+  background-size: cover; /* Ensures the graphic stretches fully to the left edge */
+  background-position: left center;
+  background-repeat: no-repeat;
+  min-height: 910px;
+  display: flex;
+  align-items: center;
+  padding-left: 10%; /* Adjust text padding inside the triangle */
+  position:absolute;
+  top: -230px;
+    width: 100%;
+}
+
+.triangle-bgg h2 {
+  color: #ffffff;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 1.2;
+  margin: 0;
+}
+
+/* Right Panel */
+.webinair-right-panel {
+  width: 60%;
+  padding-right: 10%; /* Give it breathing room on the right side */
+}
+
+.distinguish-heading {
+    font-size: 1.9vw;
+    color: #0C1896;
+    line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Cards */
+.features-gridd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.feature-cardd {
+  border: 1px solid #000;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.feature-cardd p {
+  margin: 0;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 1.1;
+}
+
+/* Bottom Description */
+.webinair-description {
+    color: #0C1896;
+    font-size: 1.5vw;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .webinair-content-wrapper {
+    flex-direction: column;
+  }
+
+  .webinair-header {
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  .webinair-banner {
+    width: 100%;
+  }
+
+  .banner-overlayy h3 {
+    font-size: 1.2rem;
+            position: relative;
+        top: 68px;
+  }
+  
+
+  .webinair-left-panel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .triangle-bgg {
+        min-height: 200px;
+        background-size: 23%;
+        padding-left: 5%;
+  }
+
+  .triangle-bgg h2 {
+    font-size:18px;
+  }
+
+  .webinair-right-panel {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .features-gridd {
+    grid-template-columns: 1fr; /* Stacks to 1 column on mobile */
+  }
+  .distinguish-heading {
+    font-size: 24px;
+  }
+  .feature-cardd p {
+    font-size: 18px;
+  }
+  .webinair-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+    .triangle-bgg {
+        min-height: 198px;
+        background-size: 15%;
+        padding-left: 2%;
+    }
+    .triangle-bgg h2 {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+        .banner-overlayy h3 {
+        font-size: 15px;
+        top: 29px;
+    }
+      
+  }
+
+
+
+
+/* Base Variables & Setup */
+:root {
+  --up-blue: #001f7a;
+  --up-red: #c00000;
+  --up-cyan: #00a0e3;
+  --font-family: Arial, sans-serif;
+}
+
+.up-webinar {
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 80% Container ensures the 20% right-side gap */
+.up-container {
+  width:90%;
+  margin-left: 0; 
+  position: relative;
+}
+
+/* --- Headers --- */
+.up-header-row {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.up-left-heading {
+  position: absolute;
+  left: 70px;
+  bottom: 5px;
+    font-size: 1.75vw;
+    color: #0C1896;
+    font-weight: 700;
+  margin: 0;
+}
+
+.up-right-tab {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 53.5%; /* Perfectly aligns with gradient box below */
+  background-color: var(--up-cyan);
+  /* Slanted left edge to match the design */
+  clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
+  padding: 12px 30px 12px 10%;
+  box-sizing: border-box;
+}
+
+.up-right-heading {
+  color: #ffffff;
+     font-size: 1.65vw;
+  font-weight: bold;
+  
+  /* Pushes the title to the left edge of the slanted box */
+  align-self: flex-end;
+  /* Uses flexbox to push the rest of the features down slightly */
+  margin:23px 0 36px 0;
+}
+
+/* --- Main Banner Overlaps --- */
+.up-banner-area {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  display: flex;
+}
+.more-up-banner {
+    width: 90%;
+    height: 416px;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+/* Shared utility for HTML Image Layers */
+.up-html-layer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+/* Layer 1: Left Image */
+.up-bg-left {
+  left: 0;
+  width: 55%;
+  object-fit: contain;
+  object-position: left center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Layer 2: Blue Arrow Shape (seminar-subtract.png) */
+.up-bg-arrow {
+  left:13%;
+  width:51%;/* Stretches to fill the intersection */
+  object-fit: fill; 
+  z-index: 2;
+}
+
+
+
+.up-gradient-layer {
+  position: absolute;
+  right: 0;
+  
+  /* Pull the box up to cover the 50px header height + 5px margin */
+  top: -55px; 
+  /* Add 55px back to the height so the bottom stays perfectly aligned */
+  height: calc(100% + 55px); 
+  
+  width: 78.5%;
+  background: linear-gradient(90deg, #41BEA5 -4.24%, #00A0E3 93.04%);
+  /* Adjusted top-left angle slightly to align with the taller box */
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
+  z-index: 1;
+  padding: 25px 30px 40px 18%; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.up-feature {
+  margin-bottom: 22px;
+  text-align: right;
+  color: #ffffff;
+   width: 50%;
+}
+
+.up-feature h4 {
+  margin: 0 0 5px 0;
+font-size: 1.4vw;
+  font-weight: bold;
+}
+
+.up-feature p {
+  margin: 0;
+ font-size: 1.1vw;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.up-register-btn {
+  background: var(--up-blue);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+  transition: background 0.3s;
+}
+
+.up-register-btn:hover {
+  background: #02144d;
+}
+
+/* Layer 4: White Box (Top Layer) */
+.up-white-layer {
+  position: absolute;
+  left: 27.5%;
+  top: 0;
+  width: 36%;
+  height: 100%;
+  background: #ffffff;
+  /* Slanted Parallelogram shape */
+  clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+  z-index:-1;
+  padding: 30px 10% 30px 19px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.up-logo {
+  max-width:400px;
+  margin-bottom: 25px;
+}
+
+.up-type {
+color: #B50000;
+    font-size: 44px;
+    font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.up-title {
+color: #0D1896;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 0.95;
+  margin: 0 0 15px 0;
+}
+
+.up-date {
+    color: #480001;
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 700;
+  margin: 0;
+}
+
+/* Layer 0: Left Gradient Background */
+.up-left-gradient-bg {
+  left: 0;
+  width:28%; /* Matches the exact width of your left image */
+  background: linear-gradient(145deg, #00a0e3 0%, #001f7a 70%);
+  clip-path: polygon(0% 0, 43% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+   height: 399px;
+}
+
+/* 
+  Make sure your existing image class has z-index: 1 
+  so it sits on top of the new gradient background.
+  (This should already be in your code from earlier).
+*/
+.up-bg-left {
+  left: 0;
+  width:27%;
+  object-fit: contain;
+  object-position: left center;
+  z-index: 1; 
+}
+@media (max-width: 1280px) {
+.up-title {
+    font-size: 36px;
+}
+.up-gradient-layer {
+    width: 66.5%;
+}
+
+}
+@media (max-width: 1024px) {
+    .up-title {
+        font-size: 29px;
+    }
+
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 991px) {
+  .up-container { width: 100%; padding: 0 15px; }
+  .webinair-header .main-headingg {
+    font-size: 30px;
+}
+.webinair-header .sub-headingg {
+    font-size: 24px;
+}
+.concept-icon {
+    width: 70px;
+    display: none;
+}
+.webinair-top {
+    padding: 0;
+}
+  .up-header-row {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .more-up-banner {
+    height: auto;
+    width: 100%;
+  }
+    
+  .up-title br {
+    display: none; /* Removes line breaks for better mobile fit */
+  }
+  
+  .up-left-heading { position: relative; margin-bottom: 10px; left: 26px; font-size: 24px; }
+  
+  .up-right-tab {
+    position: relative;
+    width: 100%;
+    clip-path: none; /* Removes slant for stacked mobile view */
+    padding: 15px 20px;
+  }
+
+  .up-banner-area {
+    height: auto;
+    flex-direction: column;
+  }
+
+  /* Hide strict desktop HTML overlay images */
+  .up-html-layer { 
+    display: block;
+    width: 88%; 
+  }
+.up-left-gradient-bg {
+  background:transparent;
+}
+.up-bg-left {
+    width: 60%;
+}
+
+  .up-gradient-layer {
+    position: relative;
+    width: 100%;
+    clip-path: none;
+    padding: 70px 20px;
+    align-items: flex-start;
+    text-align: left;
+    order: 1; /* Moves gradient box to top on mobile */
+  }
+
+  .up-feature { text-align: left; width: 100%; }
+  .up-register-btn { align-self: flex-start; }
+
+  .up-white-layer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    clip-path: none;
+    padding: 30px 20px;
+    order: 2; /* Moves white box to bottom on mobile */
+  }
+  .up-right-heading {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+  .up-feature h4 {
+    font-size: 18px;
+  }
+  .up-feature p {
+    font-size: 18px;
+  }
+}
+@media (max-width:550px) {
+  .up-left-heading {
+        left: 7px;
+        }
+      }
 
 
 
