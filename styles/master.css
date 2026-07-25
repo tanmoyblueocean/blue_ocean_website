@@ -16328,6 +16328,7 @@ line-height: 32px;
     overflow: hidden; 
         background-size: contain;
     background-position: 0 top;
+    margin-top: 80px;
 }
 
 /* Standard 1440px constraints */

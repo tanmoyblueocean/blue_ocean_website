@@ -9,17 +9,28 @@ const subLinks: Record<string, string> = {
   'Precision Strategy': '/precision-strategy',
   'Strategic Impact': '/strategic-impact',
   'Affiliations': '/affiliation',
+  'All Affiliations': '/all-affiliation',
   'IPSC': '/conference-ipsc',
   'IHRC': '/conference-ihrc',
   'CXO': '/conference-cxo',
   'BOWLD': '/conference-bowld',
   'Advisory Board': '/advisory-board',
   'Webinar / Seminar': '/webinar-seminar',
+  'Blogs': '/blog',
+  'News': '/news',
 };
 
-function isItemActive(item: { href?: string; children?: string[] }, pathname: string) {
+type NavChild = string | { label: string; children: string[] };
+
+function isItemActive(item: { href?: string; children?: NavChild[] }, pathname: string) {
   if (item.href && item.href === pathname) return true;
-  if (item.children) return item.children.some((child) => subLinks[child] === pathname);
+  if (item.children) {
+    return item.children.some((child) =>
+      typeof child === 'string'
+        ? subLinks[child] === pathname
+        : child.children.some((sub) => subLinks[sub] === pathname)
+    );
+  }
   return false;
 }
 
@@ -79,9 +90,9 @@ export default function Header() {
         'Corporate Training',
         'Certification Programs',
         'Webinar / Seminar',
-        'Affiliations',
+        { label: 'Affiliations', children: ['All Affiliations'] },
         'Scholarship Program',
-      ],
+      ] as NavChild[],
     },
     {
       label: 'Conferences',
@@ -123,6 +134,7 @@ export default function Header() {
               <li
                 key={item.label}
                 className={`${isItemActive(item, pathname) ? 'active' : ''} ${item.children ? 'has-dropdown' : ''}`}
+                style={item.label === 'University Programs' ? { display: 'none' } : undefined}
               >
                 {item.children ? (
                   <>
@@ -131,9 +143,22 @@ export default function Header() {
                       <Image src="/images/Chevron down.png" alt="Dropdown" width={12} height={12} className="dropdown-icon" />
                     </a>
                     <ul className="dropdown-menu">
-                      {item.children.map((child) => (
-                        <li key={child}><a href={subLinks[child] || '#'}>{child}</a></li>
-                      ))}
+                      {item.children.map((child) =>
+                        typeof child === 'string' ? (
+                          <li key={child}><a href={subLinks[child] || '#'}>{child}</a></li>
+                        ) : (
+                          <li key={child.label} className="has-sub-dropdown">
+                            <a href={subLinks[child.label] || '#'}>
+                              {child.label} <span className="arrow-right">&rsaquo;</span>
+                            </a>
+                            <ul className="sub-menu">
+                              {child.children.map((sub) => (
+                                <li key={sub}><a href={subLinks[sub] || '#'}>{sub}</a></li>
+                              ))}
+                            </ul>
+                          </li>
+                        )
+                      )}
                     </ul>
                   </>
                 ) : (
@@ -231,7 +256,7 @@ function SidebarNav() {
     { label: 'Home', href: '/' },
     { label: 'Consulting', href: '/consulting', children: ['Precision Strategy', 'Strategic Impact'] },
     { label: 'University Programs', children: ['Overview', 'Supply Chain Management Fundamentals', 'Certified International Supply Chain Associate', 'Foundations of Supply Chain Management'] },
-    { label: 'Training', href: '/training', children: ['Corporate Training', 'Certification Programs', 'Webinar / Seminar', 'Affiliations', 'Scholarship Program'] },
+    { label: 'Training', href: '/training', children: ['Corporate Training', 'Certification Programs', 'Webinar / Seminar', 'Affiliations', 'All Affiliations', 'Scholarship Program'] },
     { label: 'Conferences', href: '/conference', children: ['IPSC', 'IHRC', 'CXO', 'BOWLD'] },
     { label: 'About Us', href: '/about', children: ['Our Company', 'Advisory Board', 'Making Waves', 'News', 'Blogs', 'Awards', 'Life @ Blue Ocean'] },
     { label: 'Careers', href: '#' },
@@ -241,7 +266,11 @@ function SidebarNav() {
   return (
     <ul className="sidebar-nav">
       {items.map((item) => (
-        <li key={item.label} className={item.children ? `sidebar-dropdown${openItem === item.label ? ' open' : ''}` : ''}>
+        <li
+          key={item.label}
+          className={item.children ? `sidebar-dropdown${openItem === item.label ? ' open' : ''}` : ''}
+          style={item.label === 'University Programs' ? { display: 'none' } : undefined}
+        >
           {item.children ? (
             <>
               <a
