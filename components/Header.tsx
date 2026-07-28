@@ -4,12 +4,16 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { affiliationItems } from '@/constants/affiliations';
+
+const certificationBodies = affiliationItems.map((item) => item.boxTitle);
 
 const subLinks: Record<string, string> = {
   'Precision Strategy': '/precision-strategy',
   'Strategic Impact': '/strategic-impact',
   'Affiliations': '/affiliation',
   'All Affiliations': '/all-affiliation',
+  'Certification Programs': '/certification-programs',
   'IPSC': '/conference-ipsc',
   'IHRC': '/conference-ihrc',
   'CXO': '/conference-cxo',
@@ -18,6 +22,7 @@ const subLinks: Record<string, string> = {
   'Webinar / Seminar': '/webinar-seminar',
   'Blogs': '/blog',
   'News': '/news',
+  ...Object.fromEntries(affiliationItems.map((item) => [item.boxTitle, `/all-affiliation?tab=${item.id}`])),
 };
 
 type NavChild = string | { label: string; children: string[] };
@@ -88,7 +93,7 @@ export default function Header() {
       href: '/training',
       children: [
         'Corporate Training',
-        'Certification Programs',
+        { label: 'Certification Programs', children: certificationBodies },
         'Webinar / Seminar',
         { label: 'Affiliations', children: ['All Affiliations'] },
         'Scholarship Program',
@@ -256,7 +261,7 @@ function SidebarNav() {
     { label: 'Home', href: '/' },
     { label: 'Consulting', href: '/consulting', children: ['Precision Strategy', 'Strategic Impact'] },
     { label: 'University Programs', children: ['Overview', 'Supply Chain Management Fundamentals', 'Certified International Supply Chain Associate', 'Foundations of Supply Chain Management'] },
-    { label: 'Training', href: '/training', children: ['Corporate Training', 'Certification Programs', 'Webinar / Seminar', 'Affiliations', 'All Affiliations', 'Scholarship Program'] },
+    { label: 'Training', href: '/training', children: ['Corporate Training', 'Certification Programs', ...certificationBodies, 'Webinar / Seminar', 'Affiliations', 'All Affiliations', 'Scholarship Program'] },
     { label: 'Conferences', href: '/conference', children: ['IPSC', 'IHRC', 'CXO', 'BOWLD'] },
     { label: 'About Us', href: '/about', children: ['Our Company', 'Advisory Board', 'Making Waves', 'News', 'Blogs', 'Awards', 'Life @ Blue Ocean'] },
     { label: 'Careers', href: '#' },
@@ -286,7 +291,7 @@ function SidebarNav() {
               </a>
               <ul
                 className="sidebar-submenu"
-                style={{ maxHeight: openItem === item.label ? '500px' : '0' }}
+                style={{ maxHeight: openItem === item.label ? '2000px' : '0' }}
               >
                 {item.children.map((child) => (
                   <li key={child}><a href={subLinks[child] || '#'}>{child}</a></li>

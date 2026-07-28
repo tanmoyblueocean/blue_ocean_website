@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { affiliationItems } from '@/constants/affiliations';
 import AffiliationAccItem from './AffiliationAccItem';
 
@@ -9,6 +9,13 @@ export default function AllAffiliationTabs() {
   const [openId, setOpenId] = useState<string | null>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0, dragged: false });
+
+  useEffect(() => {
+    const tab = new URLSearchParams(window.location.search).get('tab');
+    if (tab && affiliationItems.some((item) => item.id === tab)) {
+      setActiveId(tab);
+    }
+  }, []);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     const track = trackRef.current;

@@ -1257,7 +1257,7 @@ line-height: normal;
     line-height: 27px;
 }
 .sec-title {
-    font-size: 32px;
+    font-size: 27px;
 }
 .intro-block {
     max-width: 53%;
@@ -1265,8 +1265,9 @@ line-height: normal;
 .spectrum-header {
     display: flex;
     align-items:flex-start;
-    flex-direction: column;
+    flex-direction: row;
 }
+
 }
 
 /* --- Responsive Layout (Mobile/Tablet) --- */
@@ -22354,7 +22355,19 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
-
+.font-light {
+    font-size: 30px;
+}
+    .sec-title {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .badge-28 {
+    max-height: 72px;
+}
+.spectrum-header {
+    margin-bottom: 0;
+}
   .spectrum-bg {
     top: 128px;
   }
