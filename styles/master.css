@@ -22355,6 +22355,13 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+
+  .legacy-section .legacy-description {
+font-size: 20px;
+}
+img#tabBgImage {
+    max-width: 539px;
+}
 .font-light {
     font-size: 30px;
 }
