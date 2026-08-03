@@ -867,7 +867,7 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
     position: relative;
     width: 100%;
     background-color: #ffffff;
-    padding: 80px 0 100px;
+    padding: 40px 0 100px;
     display: block;
    
     z-index: 50; /* High enough to sit above the hero banner */
@@ -891,7 +891,7 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
 .left-decor {
     position: absolute;
     left: 0;
-    top: 143px;
+    top: 104px;
     width: 9vw;
     max-width: 159px;
     height: auto;
@@ -958,20 +958,20 @@ text-transform: capitalize;
 .intro-block p {
 color: #2D2D2D;
 font-family: Inter;
-font-size: 22px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 30px; /* 136.364% */
+line-height: 24px; /* 136.364% */
     margin-bottom: 40px;
 }
 
 .text-blue-highlight {
   color: #0C1896!important;
 font-family: Inter;
-font-size: 28px!important;
+font-size: 22px!important;
 font-style: normal;
 font-weight: 500!important;
-line-height: 34px!important;
+line-height: 28px!important;
 letter-spacing: -0.56px;
     margin-bottom: 40px !important;
     max-width:801px;
@@ -1163,7 +1163,7 @@ msg-light {
 /* CTA Box */
 /* --- CTA Box (Now aligned left under the features) --- */
 .cta-content {
-    margin-top: 50px; /* Adds space between the feature list and this block */
+    margin-top: 22px; /* Adds space between the feature list and this block */
     position: relative;
     z-index: 10;
     width: 98%;
@@ -1183,7 +1183,7 @@ line-height: normal;
 .cta-heading {
 color: #0C1895;
 font-family: "Helvetica Neue";
-font-size: 34px;
+font-size: 28px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -1194,7 +1194,7 @@ text-transform: capitalize;
 .cta-sub {
 color: #000;
 font-family: "Helvetica Neue";
-font-size: 34px;
+font-size: 28px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -1728,7 +1728,7 @@ margin-left: 47%;
 .description-text {
 color: #505050;
 font-family: Inter;
-font-size: 28px;
+font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: 140%; /* 39.2px */
@@ -2980,11 +2980,13 @@ text-transform: capitalize;
 .event-sec .event-left {
   flex: 0 0 48%; /* Adjusted width to fit the grid better */
   position: relative;
- background-image: url('/images/webnair-bg.png');
- background-repeat: no-repeat;
+ /*background-image: url('/images/webnair-bg.png');
+ background-repeat: no-repeat;*/
   padding-top: 20px;
-      background-position: right top;
-          margin-top: 60px;
+  background-position: right top;
+  margin-top: 60px;
+    border-top: 2px solid #0b1994;
+    border-right: 2px solid #0b1994;
 }
 
 /* Wrapper to hold the speaker image and text side-by-side */
@@ -3138,12 +3140,12 @@ letter-spacing: -0.22px;
 
 /* Angled Header Ribbon */
 .event-sec .event-right-header {
-  background: linear-gradient(90deg, #00a2e8 0%, #0d148c 100%);
-  color: #ffffff;
-  padding: 20px 20px 20px 60px;
-  margin-bottom: 30px;
-  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
-  margin-left: -20px; 
+    color: #fff;
+    clip-path: polygon(0px 0, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(90deg, #00a2e8 0%, #0d148c 100%);
+    margin-bottom: 30px;
+    margin-left: -19px;
+    padding: 20px 20px 20px 60px;
 }
 
 .event-sec .event-right-header h3 {
@@ -4052,7 +4054,7 @@ text-transform: capitalize;
     text-decoration: none;
 color: #000;
 font-family: Inter;
-font-size: 20px;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 120% */
@@ -6641,7 +6643,7 @@ scrollbar-width: thin;
   width: 100%;
   margin: 0 auto;
   overflow: hidden; /* Contains the absolute positioned polygon */
-  margin-top: 22px;
+  margin-top: 119px;
 }
 
 /* Left Column */
@@ -21792,6 +21794,7 @@ h2.why-text {
   width:51%;/* Stretches to fill the intersection */
   object-fit: fill; 
   z-index: 2;
+  display: none;
 }
 
 
@@ -21862,7 +21865,7 @@ font-size: 1.4vw;
   height: 100%;
   background: #ffffff;
   /* Slanted Parallelogram shape */
-  clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   z-index:-1;
   padding: 30px 10% 30px 19px;
   box-sizing: border-box;
@@ -21962,6 +21965,7 @@ color: #0D1896;
   .more-up-banner {
     height: auto;
     width: 100%;
+    border:1px solid #00a0e3;
   }
     
   .up-title br {
@@ -21986,6 +21990,7 @@ color: #0D1896;
   .up-html-layer { 
     display: block;
     width: 88%; 
+    display:none;
   }
 .up-left-gradient-bg {
   background:transparent;
@@ -22029,6 +22034,11 @@ color: #0D1896;
 @media (max-width:550px) {
   .up-left-heading {
         left: 7px;
+        }
+
+        .event-sec .event-logo {
+        max-width: 297px;
+        top: 11px;
         }
       }
 
