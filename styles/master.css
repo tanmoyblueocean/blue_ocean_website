@@ -891,9 +891,9 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
 .left-decor {
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 143px;
     width: 9vw;
-    max-width: 114px;
+    max-width: 159px;
     height: auto;
     z-index: 1;
 }
@@ -938,8 +938,8 @@ text-transform: capitalize;
 }
 
 .badge-28 {
-    max-height: auto;
-    width: auto;
+      height: auto;
+    width: 28%;
 }
 
 /* Thin pinkish divider */
@@ -22355,6 +22355,33 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+.left-decor {
+    top: 115px;
+}
+.fixed-footer-container a {
+    font-size: 16px;
+}
+  .legacy-section .brand-text h3 {
+    font-size: 28px;
+  }
+
+  .intro-block p {
+    line-height: 25px;
+        font-size: 21px !important;
+    line-height: 27px !important;
+  }
+  .feature-item p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+  .vision-content p {
+    font-size: 24px;
+    line-height: 28px;
+}
+.description-text {
+    font-size: 22px;
+}
 
   .legacy-section .legacy-description {
 font-size: 20px;
@@ -22370,7 +22397,7 @@ img#tabBgImage {
         line-height: 1.2;
     }
     .badge-28 {
-    max-height: 72px;
+    max-height: auto;
 }
 .spectrum-header {
     margin-bottom: 0;
