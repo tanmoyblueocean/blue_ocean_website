@@ -22155,6 +22155,9 @@ color: #0D1896;
 
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+  .counter-text-home {
+    width: 53.6vw !important;
+}
 .about-angle {
     padding: 220px 80px 20px 163px;
 }
@@ -22240,6 +22243,10 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+
+  .counter-text-home {
+    width: 53vw !important;
+}
 
   .about-angle {
     padding: 180px 80px 20px 163px;
@@ -22399,6 +22406,9 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+.counter-text-home {
+    width: 53vw !important;
+  }
 .about-angle {
     padding: 130px 80px 20px 163px;
 }
@@ -22619,6 +22629,12 @@ img#tabBgImage {
 
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
+  img#tabBgImage {
+    margin-left: -15%;
+}
+.counter-text-home {
+    width: 52.6vw !important;
+}
   .about-angle {
     padding: 100px 80px 20px 163px;
  }
