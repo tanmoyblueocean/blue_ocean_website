@@ -1107,7 +1107,7 @@ msg-light {
 }
     .msg-block {
         position: relative;
-        top: auto !important;
+        top: 94px;
         right: auto !important;
         left: auto !important;
         align-items: center;
@@ -1336,7 +1336,7 @@ line-height: normal;
     }
     
     .spectrum-header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 }
@@ -1492,6 +1492,21 @@ line-height: normal;
         font-size: 16px;
     }
 }
+@media (max-width: 768px) {
+.spectrum-header {
+  flex-direction: column;
+}
+    .badge-28 {
+        width: auto;
+    }
+     .spectrum-section-mob {
+        max-width: 100%;
+        }
+      
+
+
+}
+
 @media (max-width: 550px) {
     .triangle-text-layer {
       top: -140px;
@@ -1908,8 +1923,8 @@ display:none;
 }
 @media (max-width:480px) {
     .spectrum-content .title {
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 21px;
     }
         .msg-bold {
         font-size: 28px;
@@ -1924,7 +1939,7 @@ display:none;
     width: 80%;
 }
     .spectrum-content .subtitle {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 125.605%;
     }
   }
@@ -1933,7 +1948,7 @@ display:none;
 /* Main container */
 .about-angle {
   position: relative;
-  padding: 60px 80px 60px 163px; /* Adjust padding to match your exact layout */
+  padding:250px 80px 20px 163px; /* Adjust padding to match your exact layout */
   display: flex;
   align-items: center;
   overflow: hidden; /* Prevents the absolute image from causing horizontal scroll */
@@ -1967,15 +1982,15 @@ display:none;
 
 /* Top Right Geometric Image */
 .angle-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%; /* Stretches the graphic to fill the height of the container */
-  max-width: 40%; /* Prevents the image from taking up too much width on small screens */
-  object-fit: cover; /* Ensures the image scales nicely */
-  object-position: right top;
-  z-index: 1;
-  pointer-events: none; /* Prevents the image from interfering with clicks */
+    object-fit: revert;
+    object-position: right top;
+    z-index: 1;
+    pointer-events: none;
+    max-width: 15%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @media (max-width: 980px) {
@@ -2991,6 +3006,7 @@ text-transform: capitalize;
   margin-top: 60px;
     border-top: 2px solid #0b1994;
     border-right: 2px solid #0b1994;
+    background-color: #ffffff;
 }
 
 /* Wrapper to hold the speaker image and text side-by-side */
@@ -22139,6 +22155,9 @@ color: #0D1896;
 
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+.about-angle {
+    padding: 220px 80px 20px 163px;
+}
   .spectrum-bg {
     top: 0px;
 }
@@ -22221,6 +22240,10 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+
+  .about-angle {
+    padding: 180px 80px 20px 163px;
+  }
 
   .spectrum-bg {
     top: 56px;
@@ -22376,6 +22399,10 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+.about-angle {
+    padding: 130px 80px 20px 163px;
+}
+
 .left-decor {
     top: 115px;
 }
@@ -22592,6 +22619,9 @@ img#tabBgImage {
 
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
+  .about-angle {
+    padding: 100px 80px 20px 163px;
+ }
   
   .vision-banner {
     min-height: 458px;
@@ -22899,19 +22929,46 @@ img#tabBgImage {
 
 /* Approx for 90% zoom */
 @media (min-resolution: 85dpi) and (max-resolution: 95dpi) {
+
+  .about-angle {
+    padding:310px 80px 20px 163px;
+  }
   .cv-strip-accent {
     right: 184px;
   }
+  .spectrum-bg {
+    top: -107px;
+}
 }
 
 
 /* Approx for 80% zoom */
 @media (min-resolution: 70dpi) and (max-resolution: 80dpi) {
+  .about-angle {
+    padding: 410px 80px 20px 163px;
+  }
   .cv-strip-accent {
     right: 215px;
     width: 55px;
     clip-path: polygon(0 0, 55% 100%, 100% 0);
 }
+.spectrum-bg {
+    top: -180px;
+}
+}
+
+/* Approx for 70% zoom */
+@media (min-resolution: 60dpi) and (max-resolution: 79dpi) {
+      .spectrum-bg {
+        top: -222px;
+    }
+}
+
+/* Approx for 60% zoom */
+@media (min-resolution: 50dpi) and (max-resolution: 78dpi) {
+      .spectrum-bg {
+        top: -312px;
+    }
 }
 
 
