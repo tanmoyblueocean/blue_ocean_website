@@ -1259,6 +1259,10 @@ line-height: normal;
 .sec-title {
     font-size: 27px;
 }
+
+.font-light {
+    font-size: 28px;
+}
 .intro-block {
     max-width: 53%;
 }
@@ -1272,7 +1276,7 @@ line-height: normal;
 
 /* --- Responsive Layout (Mobile/Tablet) --- */
 @media (max-width: 1400px) {
-    .sec-title { font-size: 34px; }
+    .sec-title { font-size: 22px; }
     .intro-block p, .text-blue-highlight { font-size: 16px; }
     .overlap-triangle { margin-top: -180px; }
 }
@@ -22135,6 +22139,9 @@ color: #0D1896;
 
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+  .spectrum-bg {
+    top: 0px;
+}
 
   .evolution-container {
     min-height: 458px;
@@ -22214,6 +22221,10 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+
+  .spectrum-bg {
+    top: 56px;
+  }
 
   .metrics-stack {
     max-width: 578px;
@@ -22581,6 +22592,21 @@ img#tabBgImage {
 
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
+  
+  .vision-banner {
+    min-height: 458px;
+  }
+  .vision-content p {
+    font-size: 23px;
+    line-height: 30px;
+}
+  .spectrum-bg {
+    top: 178px;
+  }
+
+      .font-light {
+        font-size: 28px;
+    }
       .tj-container {
         padding: 0 20px;
     }
@@ -22843,7 +22869,7 @@ img#tabBgImage {
     }
    
         .spectrum-content {
-        top: 16%;
+        top:50%;
     }
     .spectrum-content .subtitle {
     font-size: 29px;
@@ -22852,14 +22878,12 @@ img#tabBgImage {
         line-height: 24px;
     }
         .event-sec .event-left-content {
-        padding-left: 79px;
+        padding-left:159px;
     }
-    .event-sec .event-logo {
-        left: -31px;
-    }
+   
     .event-sec .event-logo {
     max-width: 305px;
-    left: 0;
+    left: 150px;
     }
     .desktop-nav li {
     font-size: 10px;
