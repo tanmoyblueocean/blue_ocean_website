@@ -2982,7 +2982,7 @@ text-transform: capitalize;
   color: #1a1e73;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 20px 0;
+  margin: 0 0 0 0;
   text-align: left;
   width:48%;
       padding-left: 182px;
@@ -3164,8 +3164,8 @@ letter-spacing: -0.22px;
     clip-path: polygon(0px 0, 100% 0, 100% 100%, 0 100%);
     background: linear-gradient(90deg, #00a2e8 0%, #0d148c 100%);
     margin-bottom: 30px;
-    margin-left: -19px;
-    padding: 20px 20px 20px 60px;
+    margin-left: -17px;
+    padding: 20px 20px 16px 60px;
 }
 
 .event-sec .event-right-header h3 {
@@ -22120,6 +22120,8 @@ color: #0D1896;
   margin-top: 16px;
   display: flex;
   gap: 10px;
+  left: -45px;
+  position: relative;
 }
 .seminar-nav-btn {
   width: 50px;
@@ -22243,6 +22245,9 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+  .seminar-nav-buttons {
+    left: -34px;
+}
 
   .counter-text-home {
     width: 53vw !important;
@@ -22406,6 +22411,18 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+  .seminar-nav-buttons {
+    left: -27px;
+}
+  .block-transforming {
+    right: 17%;
+}
+.block-empowering {
+    right: 17%;
+}
+.block-connecting {
+    right: 32%;
+}
 .counter-text-home {
     width: 53vw !important;
   }
@@ -22629,6 +22646,13 @@ img#tabBgImage {
 
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
+  .seminar-nav-buttons {
+    left: -23px;
+}
+  .block-transforming {
+    right: 18%;
+}
+
   img#tabBgImage {
     margin-left: -15%;
 }
@@ -22960,6 +22984,7 @@ img#tabBgImage {
 
 /* Approx for 80% zoom */
 @media (min-resolution: 70dpi) and (max-resolution: 80dpi) {
+
   .about-angle {
     padding: 410px 80px 20px 163px;
   }
@@ -22971,21 +22996,53 @@ img#tabBgImage {
 .spectrum-bg {
     top: -180px;
 }
+  .spectrum-bg {
+        top: -182x;
+    }
 }
 
-/* Approx for 70% zoom */
+/* Approx for 75% zoom */
+@media (min-resolution: 71dpi) and (max-resolution: 74dpi) {
+    .spectrum-bg {
+        top: -224px;
+    }
+}
+
+/* Approx for 67% zoom */
+@media (min-resolution: 63dpi) and (max-resolution: 66dpi) {
+ .spectrum-bg {
+        top: -311px;
+    }
+.about-angle {
+    padding: 480px 80px 20px 163px;
+}
+}
+
+
+
+/* Approx for 50% zoom 
+@media (min-resolution: 40dpi) and (max-resolution: 77dpi) {
+      .spectrum-bg {
+        top: -223px;
+    }
+}
+/* Approx for 70% zoom 
 @media (min-resolution: 60dpi) and (max-resolution: 79dpi) {
       .spectrum-bg {
-        top: -222px;
+        top: -181px;
     }
 }
+    */
 
-/* Approx for 60% zoom */
-@media (min-resolution: 50dpi) and (max-resolution: 78dpi) {
-      .spectrum-bg {
-        top: -312px;
-    }
-}
+
+
+
+
+
+
+
+
+
 
 
 
