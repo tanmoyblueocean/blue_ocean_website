@@ -5812,6 +5812,7 @@ position: relative;
     width: 146px;
     height: auto;
     z-index: 2;
+    display: none;
 }
 
 /* Card Content Typography */
@@ -6669,7 +6670,7 @@ scrollbar-width: thin;
   width: 100%;
   margin: 0 auto;
   overflow: hidden; /* Contains the absolute positioned polygon */
-  margin-top: 119px;
+  margin-top: 135px;
 }
 
 /* Left Column */
@@ -22427,6 +22428,22 @@ color: #0D1896;
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+  .cert-full-name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+  .potential-triangle {
+        width: 56%;
+        min-height: 885px;
+        background-position: -192px 0;
+    }
+    .triangle-heading {
+    font-size: 18px;
+    line-height: 21px;
+}
+      .cert-acronym {
+        font-size: 37px;
+    }
   .seminar-nav-buttons {
     left: -30px;
 }
@@ -22662,6 +22679,26 @@ img#tabBgImage {
 
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
+  .cert-acronym.small-acronym {
+    font-size: 30px;
+    line-height: 1.4;
+}
+      .potential-triangle {
+        width: 42%;
+        min-height: 790px;
+        background-position: -246px 0;
+    }
+      .cert-acronym {
+        font-size: 26px;
+    }
+        .cert-full-name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .triangle-heading {
+    font-size: 20px;
+    line-height: 24px;
+}
   .seminar-nav-buttons {
     left: -24px;
 }
@@ -22999,6 +23036,10 @@ img#tabBgImage {
   .core-values-section {
     padding-top: 12%;
 }
+.potential-triangle {
+    background-position: -176px 0;
+}
+
 }
 
 
@@ -23022,6 +23063,10 @@ img#tabBgImage {
   .spectrum-bg {
         top: -182x;
     }
+    .potential-triangle {
+    background-position: -185px 0;
+    min-height: 1226px;
+}
 
 }
 
@@ -23029,6 +23074,10 @@ img#tabBgImage {
 @media (min-resolution: 71dpi) and (max-resolution: 74dpi) {
     .spectrum-bg {
         top: -224px;
+    }
+        .potential-triangle {
+        background-position: -206px 0;
+        min-height: 1257px;
     }
  
 }
@@ -23043,6 +23092,10 @@ img#tabBgImage {
 }
   .core-values-section {
     padding-top: 12%;
+}
+.potential-triangle {
+    background-position: -296px 0;
+    min-height: 1426px;
 }
 }
 
