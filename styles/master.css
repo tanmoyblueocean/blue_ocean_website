@@ -13,11 +13,8 @@
             --border-color: #e5e5e5;
         }
 
-        body {
-            overflow-x: hidden;
-             /* Set Helvetica Neue as the primary font, with standard fallbacks */
-
-        }
+        /* Set Helvetica Neue as the primary font, with standard fallbacks */
+ 
         /* --- Custom Font Faces --- */
 
 /* Light - Weight 300 */
@@ -64,7 +61,6 @@
 
         /* --- Top Header --- */
         .site-header {
-            position: relative;
             background: #ffffff;
             border-bottom: 1px solid var(--border-color);
             height: 80px;
@@ -74,6 +70,8 @@
             justify-content: space-between;
             z-index: 100;
             position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
         }
 
@@ -950,7 +948,7 @@ text-transform: capitalize;
     margin-bottom: 30px;
 }
 .intro-block {
-    max-width:69%;
+    max-width:55%;
     width:100%;
 }
 
@@ -1157,7 +1155,7 @@ msg-light {
   display:none;
 }
 .onlytrain {
-    margin-top: -245px;
+    margin-top: -205px;
 }
 
 /* CTA Box */
@@ -4145,7 +4143,7 @@ line-height: 36px;
 .feature-item-training p {
     color: #2D2D2D;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
@@ -4234,20 +4232,24 @@ line-height: 36px; /* 105.882% */
 .card-title {
 color: #000;
 font-family: "Helvetica Neue";
-font-size: 32px;
-font-style: normal;
-font-weight: 500;
 line-height: 36px; /* 112.5% */
   margin: 15px 0 10px;
+}
+.offering-card .card-title {
+  color:#000;
+      font-size: 1.7vw;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-bottom: .5rem;
 }
 
 .card-text {
 color: #000;
 font-family: "Helvetica Neue";
-font-size: 24px;
+font-size: 1.25rem;
+line-height: 1.75rem;
 font-style: normal;
 font-weight: 400;
-line-height: 36px;
   margin: 0;
 }
 
@@ -4469,6 +4471,10 @@ line-height: 46px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 40px;
   padding-bottom: 10px;
+  position: sticky;
+  top: 80px; /* sticks flush under the fixed .site-header (80px tall) */
+  z-index: 90;
+  background-color: #fbfbfb; /* matches .organizational-goals so content behind doesn't show through */
 }
 
 .nav-tabs {
@@ -5073,7 +5079,7 @@ line-height: 36px; /* 128.571% */
     background-image: url(/images/traning-left-angle.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left top;
+    background-position: -86px 0;
     min-height: 1166px;
     display: flex;
     align-items: center;
@@ -5122,7 +5128,7 @@ line-height: 40px; /* 88.889% */
 .cert-acronym {
 color: #1A4689;
 font-family: "Helvetica Neue";
-font-size: 124px;
+font-size: 74px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -5138,7 +5144,7 @@ line-height: normal;
 .cert-full-name {
 color: #1A4689;
 font-family: "Helvetica Neue";
-font-size: 24.297px;
+font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 21.868px; /* 90% */
@@ -11436,7 +11442,7 @@ list-style: disc;
 
 .cv-corner-icon {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
   width: 210px;
   max-width: 28vw;
@@ -22157,6 +22163,13 @@ color: #0D1896;
 
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+
+  .potential-triangle {
+    min-height: 1116px;
+}
+  .seminar-nav-buttons {
+    left: -39px;
+}
   .counter-text-home {
     width: 53.6vw !important;
 }
@@ -22245,6 +22258,9 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+  .potential-triangle {
+    min-height: 1032px;
+  }
   .seminar-nav-buttons {
     left: -34px;
 }
@@ -22412,7 +22428,7 @@ color: #0D1896;
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
   .seminar-nav-buttons {
-    left: -27px;
+    left: -30px;
 }
   .block-transforming {
     right: 17%;
@@ -22647,7 +22663,7 @@ img#tabBgImage {
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
   .seminar-nav-buttons {
-    left: -23px;
+    left: -24px;
 }
   .block-transforming {
     right: 18%;
@@ -22979,11 +22995,18 @@ img#tabBgImage {
   .spectrum-bg {
     top: -107px;
 }
+
+  .core-values-section {
+    padding-top: 12%;
+}
 }
 
 
 /* Approx for 80% zoom */
 @media (min-resolution: 70dpi) and (max-resolution: 80dpi) {
+    .core-values-section {
+    padding-top: 9%;
+}
 
   .about-angle {
     padding: 410px 80px 20px 163px;
@@ -22999,6 +23022,7 @@ img#tabBgImage {
   .spectrum-bg {
         top: -182x;
     }
+
 }
 
 /* Approx for 75% zoom */
@@ -23006,6 +23030,7 @@ img#tabBgImage {
     .spectrum-bg {
         top: -224px;
     }
+ 
 }
 
 /* Approx for 67% zoom */
@@ -23015,6 +23040,9 @@ img#tabBgImage {
     }
 .about-angle {
     padding: 480px 80px 20px 163px;
+}
+  .core-values-section {
+    padding-top: 12%;
 }
 }
 
