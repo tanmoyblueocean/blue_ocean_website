@@ -1681,6 +1681,24 @@ display: flex;
   background-color: rgba(0, 0, 0, 0.8); /* Dark solid */
 }
 
+@media (max-width:1440px) {
+.spectrum-bg {
+    top: 95px;
+}
+.spectrum-content { top: 57%; }
+}
+
+@media (max-width:1366px) {
+   .spectrum-content {
+        top: 47%;
+    }
+}
+@media (max-width:1280px) {
+    .spectrum-bg {
+        top: 127px;
+    }
+  }
+
 @media (max-width:1024px) {
 .spectrum-content {
     max-width:100%;
@@ -1800,17 +1818,13 @@ letter-spacing: -0.308px;
     line-height: 35px;
 }
 
-.spectrum-content {
-    top: 33%;
-}
+
 }
 @media (max-width: 1366px) {
 .feature-list {
     width: 378px;
 }
-    .spectrum-content {
-        top: 26%;
-    }
+ 
 }
 
 /* --- Mobile & Tablet Responsiveness --- */
@@ -1822,10 +1836,13 @@ letter-spacing: -0.308px;
     width: 50%;
   }
   .inner-content {
-    margin-left: 0; /* Let text take up full width below on smaller screens */
+    margin-left: 240px; /* Let text take up full width below on smaller screens */
   }
   .spectrum-content .title {
-    font-size: 1.9rem;
+    font-size: 20px;
+  }
+  .spectrum-content .subtitle {
+    font-size: 24px;
   }
 .spectrum-bg {
 
@@ -1842,10 +1859,13 @@ letter-spacing: -0.308px;
 .gradient-img {
 display:none;
 }
-.spectrum-overlay {
-    height: 400px;
-    background:#0C1896;
-}
+    .spectrum-overlay {
+        background: #0c1896;
+        height: 100px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 100%;
+    }
 .spectrum-bg {
   background:#0c1895;
 }
@@ -1857,11 +1877,11 @@ display:none;
         min-height: 400px;
         object-fit: cover;
     }
-    .spectrum-content {
-        top: 0;
+   .spectrum-content {
+        top: 56%;
     }
     .slider-wrapper {
-        max-width: 69%;
+        max-width: 100%;
         margin-left: auto;
         margin-right: 0;
         overflow: hidden;
@@ -1882,6 +1902,8 @@ display:none;
 }
 }
 
+
+
 @media (max-width: 768px) {
   /* On small mobile displays, revert to clean vertical blocks for best reading */
   .slider-wrapper, .spectrum-overlay {
@@ -1894,6 +1916,7 @@ display:none;
     justify-content: center;
     text-align: center;
   }
+    
 
   .gradient-img {
     object-fit: cover; /* Fallback for block rendering */
@@ -1911,8 +1934,13 @@ display:none;
   .status-link {
     line-height: 107%;
   }
+        .spectrum-content {
+        top: 0;
+    }
 
 }
+
+
 
 @media (max-width:650px) {
 .spectrum-content .subtitle {
@@ -5714,6 +5742,9 @@ line-height: normal;
     margin-bottom: 40px;
   }
 }
+
+
+
 
 
 /***/
@@ -20475,6 +20506,7 @@ h2.why-text {
     }
 }
 
+
 .bowld__logo {
     max-width: 148px;
     width: 100%;
@@ -20956,6 +20988,30 @@ h2.why-text {
     .blog-banner-bottom h2 {
         font-size: 2.2rem;
     }
+}
+
+
+@media (max-width: 1117px) {
+.font-light {
+    font-size: 26px;
+}
+.block-transforming {
+    right: 17%;
+}
+.block-empowering {
+    right: 19%;
+}
+.block-connecting {
+    right: 34%;
+}
+    .overlap-triangle {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .spectrum-bg {
+        top: 171px;
+    }
+  
 }
 
 
@@ -22958,9 +23014,7 @@ img#tabBgImage {
   .concept-element {
     width: 74px;
   }
-  .less-padding {
-    padding-left: 0 !important;
-}
+
   .card-title {
     font-size: 27px;
     line-height: 30px;
@@ -23100,8 +23154,22 @@ img#tabBgImage {
 }
 
 
+/* Exact target for 125% OS + 150% Browser Zoom (180dpi) */
+@media (min-resolution: 175dpi) and (max-resolution: 184dpi) {
+  /* Add your specific fixes for the hero banner here */
+}
 
-/* Approx for 50% zoom 
+/* 
+
+/* 125% OS Scale + 125% Browser Zoom (Approx 1.56x or 150dpi) 
+@media (min-resolution: 145dpi) and (max-resolution: 155dpi) {
+.spectrum-bg {
+    top: 96px;
+}
+}
+
+
+Approx for 50% zoom 
 @media (min-resolution: 40dpi) and (max-resolution: 77dpi) {
       .spectrum-bg {
         top: -223px;
