@@ -22567,7 +22567,8 @@ img#tabBgImage {
     margin-bottom: 0;
 }
   .spectrum-bg {
-    top: 128px;
+    /*top: 128px;*/
+    top:142px;
   }
       .spectrum-content {
         top: 50%;
@@ -22780,7 +22781,7 @@ img#tabBgImage {
     line-height: 30px;
 }
   .spectrum-bg {
-    top: 178px;
+    top: 184px;
   }
 
       .font-light {
@@ -23006,7 +23007,13 @@ img#tabBgImage {
     font-size: 20px;
   }
   .intro-block {
-        max-width: 55%;
+        max-width: 100%;
+    }
+        .block-empowering {
+        top: 78px;
+    }
+        .block-connecting {
+        top: 90px;
     }
       .training-section-title {
         padding-left: 68px;
@@ -23036,7 +23043,7 @@ img#tabBgImage {
         padding: 40px 20px;
     }
     .overlap-triangle {
-        max-width: 628px;
+        max-width: 100%;
     }
     .msg-bold {
         font-size: 37px;
@@ -23049,7 +23056,7 @@ img#tabBgImage {
         top:50%;
     }
     .spectrum-content .subtitle {
-    font-size: 29px;
+    font-size: 17px;
     }
         .spectrum-content .title {
         line-height: 24px;
