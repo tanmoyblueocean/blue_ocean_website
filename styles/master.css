@@ -740,11 +740,12 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
     position: relative;
     width: 100%;
     /* Max height on desktop, but allows image to scale down */
-    max-height: 600px; 
+    max-height:800px; 
     overflow: hidden;
     display: flex;
     align-items: center;
     z-index: 10;
+        margin-top: 74px;
 }
 
 /* Background image styling */
