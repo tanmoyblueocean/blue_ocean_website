@@ -10603,8 +10603,9 @@ text-transform: capitalize;
         margin-top:-266px;
     }
         .st-bg-image {
-        width: 69%;
+        width: 71%;
         height: 145%;
+        left: -60px;
         }
         .tj-subtitle {
        line-height: 34px;
@@ -22316,6 +22317,10 @@ color: #0D1896;
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+   
+  .challenges-text {
+    left: -166px;
+  }
   .potential-triangle {
     min-height: 1032px;
   }
@@ -22376,10 +22381,19 @@ color: #0D1896;
     width: 53%;
   }
   .ei-card-1 {
-    clip-path: polygon(0 0, 67% 0, calc(100% - 71px) 100%, 0 100%);
+    clip-path: polygon(0 0, 67% 0, calc(100% - 49px) 100%, 0 100%);
   }
   .ei-card-3 {
-    clip-path: polygon(0 0, calc(100% - 72px) 0, 67% 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 49px) 0, 67% 100%, 0 100%);
+}
+.ei-card-2 {
+    clip-path: polygon(161px 0, 100% 0, 100% 100%, 0 100%);
+}
+.ei-up {
+    clip-path: polygon(56% 0, 100% 100%, 0 100%);
+}
+.ei-down {
+    clip-path: polygon(0 0, 100% 0, 56% 100%);
 }
 
   .stat-percent {
