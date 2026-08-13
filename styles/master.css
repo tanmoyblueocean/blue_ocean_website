@@ -3547,7 +3547,7 @@ color: #1D1D1B;
 
 /* Client Card (Outer Border & Gap) */
 .clientel .clientel-card {
-  border: 1px solid #dcdcdc; /* Light gray outer border */
+  border: 1px solid #fff; /* Light gray outer border */
   padding: 12px; /* Creates the space between outer and inner borders */
   background-color: transparent; 
 }
@@ -3561,12 +3561,18 @@ color: #1D1D1B;
   padding: 30px 20px;
   height: 240px; /* Forces all logo boxes to be the exact same height */
   box-sizing: border-box;
+transition: transform 1s ease-in;
+}
+.clientel .clientel-card-inner:hover {
+ box-shadow: 2.0px 2.0px 13.0px hsl(0deg 0% 0% / 0.15);
+  transform: translateX(0px);
+
 }
 
 /* Logo Image Constrain */
 .clientel .clientel-card-inner img {
-  max-width: 100%;
-  max-height: 200px;
+  width: 100%;
+  /*max-height: 200px;*/
   object-fit: contain; /* Ensures logos don't stretch weirdly */
   display: block;
 }
