@@ -937,8 +937,9 @@ text-transform: capitalize;
 }
 
 .badge-28 {
-      height: auto;
-    width: 28%;
+    height: auto;
+    width: 18%;
+    margin-left: 15%;
 }
 
 /* Thin pinkish divider */
@@ -997,11 +998,11 @@ line-height: 24px; /* 100% */
 
 .feature-item p {
 color: #2D2D2D;
-font-family: "Helvetica Neue";
+font-family: "Inter";
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 20px;
+line-height: 24px;
     margin-bottom: 10px;
 }
 
@@ -2008,7 +2009,7 @@ display:none;
 /* Main container */
 .about-angle {
   position: relative;
-  padding:135px 80px 20px 163px; /* Adjust padding to match your exact layout */
+  padding:135px 80px 20px 853px; /* Adjust padding to match your exact layout */
   display: flex;
   align-items: center;
   overflow: hidden; /* Prevents the absolute image from causing horizontal scroll */
@@ -4177,10 +4178,10 @@ text-transform: capitalize;
     text-decoration: none;
 color: #000;
 font-family: Inter;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 120% */
+font-weight: 400;
+line-height: 8px; /* 120% */
 letter-spacing: 0.4px;
 text-transform: capitalize;
     transition: color 0.2s ease;
@@ -21109,6 +21110,15 @@ h2.why-text {
         .block-transforming {
         top: 43px;
     }
+    .font-light {
+              font-size: 34px;
+    }
+        .sec-title {
+        font-size: 34px;
+    }
+    .left-decor {
+    width: 6vw;
+    }
   
 
 }
@@ -22338,7 +22348,7 @@ color: #0D1896;
     width: 53.6vw !important;
 }
 .about-angle {
-    padding: 220px 80px 20px 163px;
+    padding:220px 80px 20px 793px;
 }
   .spectrum-bg {
     top: 0px;
@@ -22461,7 +22471,7 @@ color: #0D1896;
 }
 
   .about-angle {
-    padding: 180px 80px 20px 163px;
+    padding:180px 80px 20px 693px;
   }
 
   .spectrum-bg {
@@ -22679,7 +22689,7 @@ color: #0D1896;
     width: 53vw !important;
   }
 .about-angle {
-    padding: 130px 80px 20px 163px;
+    padding: 130px 80px 20px 573px;
 }
 
 .left-decor {
@@ -23339,6 +23349,13 @@ img#tabBgImage {
     background-position: -296px 0;
     min-height: 1426px;
 }
+}
+
+/* Targets exactly 1.75x overall scale (which equals 168 DPI) */
+@media (max-width: 900px) {
+       .block-empowering {
+        top: 116px;
+       }
 }
 
 

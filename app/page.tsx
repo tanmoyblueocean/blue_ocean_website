@@ -76,9 +76,9 @@ export default function HomePage() {
               </div>
             </div>
             <div className="cta-content">
-              <p className="cta-small">Step into the realm of possibilities -</p>
-              <h3 className="cta-heading">Discover Insights, Elevate Skills,<br />And Connect With Brilliance.</h3>
-              <p className="cta-sub">Explore more to illuminate your path to success.</p>
+              <p className="cta-small" style={{ display: 'none' }}>Step into the realm of possibilities -</p>
+              <h3 className="cta-heading">Ready to transform, learn, and connect?</h3>
+              <p className="cta-sub" style={{ display: 'none' }}>Explore more to illuminate your path to success.</p>
               <a href="#" className="btn-blue">
                 Get in Touch{' '}
                 <Image src="/images/Arrow right.png" alt="Arrow Right" width={16} height={16} className="btn-arrow" />
