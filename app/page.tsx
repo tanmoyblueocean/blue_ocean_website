@@ -172,8 +172,7 @@ export default function HomePage() {
         </div>
         <div className="content-wrapper">
           <p className="main-text">
-            Explore limitless opportunities with <strong>Blue Ocean Corporation</strong><br />
-            where transformation meets innovation.
+            Explore our legacy and vision for the future.
           </p>
           <a href="#" className="btn-story">
             Our Story{' '}

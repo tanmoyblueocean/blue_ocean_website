@@ -36,7 +36,7 @@
     min-height: 1.5em
 }
 
-:root {}
+
 
 .container {
     margin-left: auto;
@@ -168,7 +168,7 @@ justify-content: center;
 position: relative
 } */
 
-@media (min-width:960px) {}
+
 
 /* .seminar-section .seminar-list-wrap:before {
 background-image: url(/images/seminar-list-angle.png);
@@ -369,7 +369,7 @@ width: 60px
 
 
 
-@media (min-width:1440px) {}
+
 
 .training-course-section .course-slider .course-slider-js .tns-item {
     opacity: 0;
@@ -395,7 +395,7 @@ width: 60px
 
 
 
-@media (min-width:960px) {}
+
 
 .absolute {
     position: absolute
@@ -624,6 +624,18 @@ img#tabBgImage {
     width: 100%;
     max-width: 690px;
     margin-left: 5%;
+}
+
+@media (max-width:1440px) {
+img#tabBgImage {
+    margin-left: -7%;
+}
+}
+
+@media (max-width:1117px) {
+    img#tabBgImage {
+        margin-left: -21%;
+    }
 }
 
 
@@ -985,6 +997,9 @@ letter-spacing: -0.264px;
   /* CXO Home */
 
 }
+
+
+
 .slider-conf .tns-controls{
   display: none;
 }
@@ -1555,8 +1570,8 @@ section.bridging_blocK.relative     .header_text {
  
 }
 
-html {
-}
+
+
 
 
 @media screen and (max-width: 460px) {
@@ -1565,6 +1580,12 @@ html {
 .mt-16.ml-6.mob-marging {
     margin-top: 10px;
 }
+}
+
+@media screen and (max-width: 375px) {
+    .tab-location-box .tab_inner h2 {
+        padding-top: 1vw !important;
+    }
 }
 
 /* ===== from inline (slide.html <head>) ===== */

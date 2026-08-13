@@ -998,10 +998,10 @@ line-height: 24px; /* 100% */
 .feature-item p {
 color: #2D2D2D;
 font-family: "Helvetica Neue";
-font-size: 22px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px;
+line-height: 20px;
     margin-bottom: 10px;
 }
 
@@ -1051,10 +1051,10 @@ line-height: 24px;
 .msg-light {
    color: #000;
 font-family: "Helvetica Neue";
-font-size: 60px;
+font-size: 45px;
 font-style: normal;
 font-weight: 400;
-line-height: 55px; /* 91.667% */
+line-height: 0; /* 91.667% */
 text-transform: capitalize;
 }
 
@@ -1062,39 +1062,50 @@ text-transform: capitalize;
 .msg-bold {
     color: #0C1895;
     font-family: "Helvetica Neue";
-    font-size: 65px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: 77px;
     text-transform: capitalize;
-    margin-left: 61px;
+    margin-left: 35px;
 }
 
 /* --- Diagonal Staggering Offsets (Adjust these to nudge values) --- */
 
 /* 1. Top block - shifted furthest right */
 .block-transforming {
-      top: 60px;
-    right: 22%;
+      top: 173px;
+    right: 36%;
 }
 
 /* 2. Middle block - centered along the triangle body */
 .block-empowering {
-    top: 250px;
-    right: 25%;
+     top: 306px;
+    right: 43%;
 }
 
 /* 3. Bottom block - shifted furthest left */
 .block-connecting {
-      top: 440px;
-    right: 42%;
+    top: 440px;
+    right: 59%;
 }
 @media (max-width: 1440px) {
+  .spectrum-section {
+    padding: 40px 0 50px;
+  }
 msg-light {
     font-size: 38px;
 }
 .msg-bold {
     font-size: 40px;
+}
+.block-transforming {
+  top: 75px;
+  right: 19%;
+}
+.feature-item p {
+    font-size: 16px;
+    line-height: 21px;
 }
 }
 
@@ -1182,7 +1193,7 @@ line-height: normal;
 .cta-heading {
 color: #0C1895;
 font-family: "Helvetica Neue";
-font-size: 28px;
+font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -1193,7 +1204,7 @@ text-transform: capitalize;
 .cta-sub {
 color: #000;
 font-family: "Helvetica Neue";
-font-size: 28px;
+font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -1246,10 +1257,12 @@ line-height: normal;
     top: 0;
 }
 .block-empowering {
-    top: 186px;
+    top: 190px;
+    right: 24%;
 }
 .block-connecting {
     top: 310px;
+    right: 40%;
 }
 .msg-light {
     font-size: 42px;
@@ -1291,6 +1304,12 @@ line-height: normal;
     width: 378px;
 }
 }
+@media (max-width: 1117px) {
+    .cta-content {
+        width:46%;
+    }
+
+}
 
 @media (max-width: 1024px) {
   .show-dek {
@@ -1303,7 +1322,7 @@ line-height: normal;
         max-width: 100%;
     }
     .spectrum-container {
-        flex-direction: column;
+        flex-direction: row;
         padding:0;
     }
    
@@ -1340,6 +1359,10 @@ line-height: normal;
     }
 }
 @media (max-width: 980px) {
+
+  .spectrum-container {
+            flex-direction: column;
+  }
     .triangle-text-layer {
         position: absolute;
         top: -81px;
@@ -1521,6 +1544,7 @@ line-height: normal;
   }
 
 
+
 /* Base wrapper utilizing the requested class */
 .con-gallery {
   position: relative;
@@ -1617,7 +1641,7 @@ line-height: normal;
 display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 80%;
+  max-width:71%;
       position: relative;
     top:51%;
 }
@@ -1684,7 +1708,7 @@ display: flex;
 
 @media (max-width:1440px) {
 .spectrum-bg {
-    top: 95px;
+    top:95px;
 }
 .spectrum-content { top: 57%; }
 }
@@ -1693,10 +1717,18 @@ display: flex;
    .spectrum-content {
         top: 47%;
     }
+    .spectrum-bg {
+        top: 103px;
+    }
 }
 @media (max-width:1280px) {
     .spectrum-bg {
         top: 127px;
+    }
+  }
+@media (max-width:1117px) {
+    .spectrum-bg {
+        top: 171px;
     }
   }
 
@@ -1704,6 +1736,9 @@ display: flex;
 .spectrum-content {
     max-width:100%;
  }
+    .spectrum-bg {
+        top: 183px;
+    }
 }
 
 
@@ -1720,7 +1755,7 @@ display: flex;
 .spectrum-content .subtitle {
 color: #FFF;
 font-family: "Helvetica Neue";
-font-size: 36px;
+font-size: 34px;
 font-style: normal;
 font-weight: 400;
 line-height: 84.605%;
@@ -1732,10 +1767,10 @@ letter-spacing: -0.396px;
 .spectrum-content .title {
 color: #FFF;
 font-family: "Helvetica Neue";
-font-size: 55px;
+font-size: 40px;
 font-style: normal;
 font-weight: 700;
-line-height: 57px;
+line-height: 42px;
 letter-spacing: -0.715px;
 text-transform: capitalize;
   margin: 0;
@@ -1745,7 +1780,7 @@ text-transform: capitalize;
 .text-content-bar {
   position: relative;
   background-color: #ffffff;
-  padding: 35px 40px;
+  padding: 75px 40px 0;
   z-index: 3; /* Ensures text block sits clearly above background components */
 }
 .info-slider-container {
@@ -1764,7 +1799,7 @@ margin-left: 47%;
 .description-text {
 color: #505050;
 font-family: Inter;
-font-size: 24px;
+font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: 140%; /* 39.2px */
@@ -1845,13 +1880,11 @@ letter-spacing: -0.308px;
   .spectrum-content .subtitle {
     font-size: 24px;
   }
-.spectrum-bg {
 
-    top: -180px;
-}
     .spectrum-content {
-        top: -24%;
+        top: 56%;
     }
+    
     .text-content-bar {
     padding: 135px 40px 0;
     }
@@ -1975,7 +2008,7 @@ display:none;
 /* Main container */
 .about-angle {
   position: relative;
-  padding:250px 80px 20px 163px; /* Adjust padding to match your exact layout */
+  padding:135px 80px 20px 163px; /* Adjust padding to match your exact layout */
   display: flex;
   align-items: center;
   overflow: hidden; /* Prevents the absolute image from causing horizontal scroll */
@@ -1993,17 +2026,17 @@ display:none;
 /* 28+ Years Heading */
 .years-heading {
   color: #0C1896; /* Dark corporate blue matching the screenshot */
-  font-size: 65px; 
-  font-weight: 800; /* Extra bold */
-  margin: 0 0 10px 0;
+  font-size: 42px; 
+  font-weight:700; /* Extra bold */
+  margin: 0;
   line-height: 1;
 }
 
 /* Subheading */
 .years-subheading {
   color: #0b1587;
-  font-size: 34px;
-  font-weight: 600; /* Semi-bold */
+  font-size: 30px;
+  font-weight:500; /* Semi-bold */
   margin: 0;
 }
 
@@ -2013,12 +2046,21 @@ display:none;
     object-position: right top;
     z-index: 1;
     pointer-events: none;
-    max-width: 15%;
+    max-width: 10%;
     height: auto;
     position: absolute;
     top: 0;
     right: 0;
+
 }
+
+
+@media (max-width: 1280px) {
+.about-angle {
+    padding: 35px 80px 20px 163px;
+}
+}
+
 
 @media (max-width: 980px) {
 .about-angle {
@@ -2135,10 +2177,10 @@ display:none;
 .vision-content p {
     color: #FFF;
 font-family: "Helvetica Neue";
-font-size: 34px;
+font-size: 30px;
 font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 117.647% */
+font-weight: 400;
+line-height: 37px; /* 117.647% */
 letter-spacing: -0.374px;
 }
 
@@ -2164,6 +2206,14 @@ letter-spacing: -0.374px;
 /* Hover Effect 3: The Blue Background Fades In */
 .vision-banner:hover .vision-content::before {
   opacity: 1;
+}
+
+@media (max-width: 1440px) {
+.vision-content p {
+    font-size: 24px;
+    line-height: 29px;
+}
+
 }
 
 /* Mobile Responsiveness */
@@ -2253,7 +2303,7 @@ color: #0C1896;
 font-family: "Helvetica Neue";
 font-size: 34px;
 font-style: normal;
-font-weight: 400;
+font-weight: 600;
 line-height: normal;
 letter-spacing: -0.374px;
   margin-bottom: 25px;
@@ -2354,7 +2404,9 @@ letter-spacing: -0.374px;
 /* =========================================
    LEGACY SECTION STYLES (Strictly Scoped)
    ========================================= */
-
+.legacy-section {
+  margin-top: -164px;
+}
 /* Scoped Container */
 .legacy-section .container {
   max-width: 1440px;
@@ -2387,7 +2439,7 @@ letter-spacing: -0.374px;
 .legacy-section .legacy-subtitle {
 color: #0C1895;
 font-family: "Helvetica Neue";
-font-size: 40px;
+font-size: 35px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -2397,7 +2449,7 @@ line-height: normal;
 .legacy-section .legacy-title {
 color: #0C1895;
 font-family: "Helvetica Neue";
-font-size: 40px;
+font-size: 35px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -2408,7 +2460,7 @@ line-height: normal;
 .legacy-section .legacy-description {
 color: #1D1D1B;
 font-family: "Helvetica Neue";
-font-size: 24px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 36px */
@@ -2553,6 +2605,17 @@ flex: 0 0 50%; /* Matches the exact width of the top triangle section */
 }
 
 /* --- Mobile Responsiveness --- */
+@media (max-width: 1440px) {
+.legacy-section .brand-text h3 {
+    font-size: 26px;
+}
+}
+@media (max-width: 1117px) {
+.legacy-section {
+      margin-top: -34px;
+}
+
+}
 @media (max-width: 900px) {
   .legacy-section .legacy-content {
     flex-direction: column;
@@ -2800,6 +2863,9 @@ letter-spacing: -0.44px;
 text-transform: capitalize;
   margin: 0 0 0 25px; /* Adds space between the triangles and the text */
 }
+
+
+
 
 /* Simple Responsive Adjustment */
 @media (max-width: 768px) {
@@ -3250,14 +3316,18 @@ letter-spacing: -0.22px;
 @media (max-width:1024px) {
 
     .event-sec .event-left-content {
-        padding-left: 20px;
+        padding-left: 160px;
     }
         .event-sec .event-logo {
-        left: 0;
-        max-width:352px;
+               max-width: 304px;
+        left: 155px;
     }
+ 
     .event-sec .event-right-header {
-    margin-left: -82px;
+    margin-left: -19px;
+}
+.event-sec .event-right-header h3 {
+  font-size: 18px;
 }
   }
 @media (max-width:980px) {
@@ -3285,6 +3355,12 @@ letter-spacing: -0.22px;
     }
     .event-sec .event-subtitle {
     font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+ .event-sec .event-left-content {
+        padding: 15px;
     }
 }
 
@@ -3432,10 +3508,10 @@ letter-spacing: -0.22px;
 .clientel .clientel-subtitle {
     color: #0C1896;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 100%;
     letter-spacing: -0.44px;
     text-transform: capitalize;
   margin: 0 0 5px 0;
@@ -3444,7 +3520,7 @@ letter-spacing: -0.22px;
 .clientel .clientel-title {
 color: #0C1895;
     font-family: "Helvetica Neue";
-    font-size: 40px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -3454,7 +3530,7 @@ color: #0C1895;
 .clientel .clientel-desc {
 color: #1D1D1B;
     font-family: "Helvetica Neue";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -3536,7 +3612,7 @@ color: #1D1D1B;
 /* Typography Style */
 .discover-path .discover-text {
   color: #0b1a8e; /* Matching signature deep blue */
-  font-size: 1.9rem;
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
   line-height: 1.3;
@@ -5557,10 +5633,10 @@ line-height: 32px; /* 88.889% */
 .description {
 color: #505050;
 font-family: "Helvetica Neue";
-font-size: 22px;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 32px;
+line-height: 30px;
   margin-bottom: 30px;
 }
 
@@ -13049,6 +13125,8 @@ text-transform: capitalize;
 .sustainable-change .sc-arrow {
   transition: transform 0.2s ease;
 }
+
+
 
 
 /* ==========================================
@@ -21007,14 +21085,35 @@ h2.why-text {
     right: 34%;
 }
     .overlap-triangle {
-        max-width: 100%;
+    max-width: 632px;
         padding: 0 20px;
     }
-    .spectrum-bg {
+        .spectrum-bg {
         top: 171px;
     }
   
+  
 }
+@media (max-width:1024px) {
+    .block-empowering {
+        top: 23px;
+        
+    }
+        .msg-light {
+        font-size: 30px;
+        line-height: 0px;
+    }
+    .block-connecting {
+      top:10px;
+    }
+        .block-transforming {
+        top: 43px;
+    }
+  
+
+}
+
+
 
 
 /* --- Base Container --- */
@@ -22124,6 +22223,7 @@ color: #0D1896;
         .event-sec .event-logo {
         max-width: 297px;
         top: 11px;
+        left: 5px;
         }
       }
 
@@ -22203,6 +22303,11 @@ color: #0D1896;
 }
 .seminar-nav-btn:hover {
   background-color: gray;
+}
+@media (max-width:1024px) {
+   .seminar-nav-buttons {
+    left: -24px;
+}
 }
 @media (max-width: 600px) {
   .seminar-slider-container { width: 100%; }
@@ -22312,11 +22417,34 @@ color: #0D1896;
 .event-sec .event-logo {
     left: 227px;
 }
-
 }
+
+
 
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+
+  img#tabBgImage {
+    margin-left: -4%;
+}
+
+
+.shape-text h2 {
+    font-size: 32px;
+}
+  .block-transforming {
+        top: 60px;
+    right: 14%;
+  }
+  .spectrum-bg {
+    top:140px;
+  }
+  .sec-title {
+    font-size: 30px;
+  }
+  .font-light {
+    font-size: 34px;
+  }
    
   .challenges-text {
     left: -166px;
@@ -22337,7 +22465,7 @@ color: #0D1896;
   }
 
   .spectrum-bg {
-    top: 56px;
+    top: 57px;
   }
 
   .metrics-stack {
@@ -22456,14 +22584,15 @@ color: #0D1896;
 }
 .msg-bold {
     font-size:50px;
-    line-height: 48px;
+    line-height: 80px;
 }
 .block-empowering {
-    top: 178px;
+    top: 158px;
+    right: 17%;
 }
 .block-connecting {
-    top: 312px;
-    right: 37%;
+        top: 268px;
+        right: 33%;
 }
 .overlap-triangle {
     width: 80%;
@@ -22491,14 +22620,33 @@ color: #0D1896;
 .event-sec .event-logo {
     left: 173px;
 }
+.event-sec .event-logo {
+    max-width: 350px;
+}
+.clientel .clientel-container {
+    padding: 0 112px;
+}
  .only-consluting-title {
     font-size: 23px;
     line-height: 29px;
   }
+  .event-sec .event-cards-wrapper {
+
+    width: 100%;
+  }
 }
+
+
+
 
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
+  .legacy-section .legacy-text {
+    padding-left: 14%;
+}
+      .spectrum-bg {
+        top: 128px;
+    }
   .cert-full-name {
         font-size: 12px;
         line-height: 14px;
@@ -22563,7 +22711,7 @@ color: #0D1896;
 }
 
   .legacy-section .legacy-description {
-font-size: 20px;
+font-size:16px;
 }
 img#tabBgImage {
     max-width: 539px;
@@ -22581,10 +22729,10 @@ img#tabBgImage {
 .spectrum-header {
     margin-bottom: 0;
 }
-  .spectrum-bg {
-    /*top: 128px;*/
+  /*.spectrum-bg {
+   
     top:142px;
-  }
+  }*/
       .spectrum-content {
         top: 50%;
     }
@@ -22749,6 +22897,7 @@ img#tabBgImage {
 }
 
 
+
 /* Approx for 175% zoom */
 @media (min-resolution: 165dpi) and (max-resolution: 185dpi) {
   .cert-acronym.small-acronym {
@@ -22775,7 +22924,8 @@ img#tabBgImage {
     left: -24px;
 }
   .block-transforming {
-    right: 18%;
+     top: 126px;
+      right: 30%;
 }
 
   img#tabBgImage {
@@ -22796,8 +22946,14 @@ img#tabBgImage {
     line-height: 30px;
 }
   .spectrum-bg {
-    top: 184px;
+    top: 177px;
   }
+      .shape-text h2 {
+        font-size: 24px;
+    }
+    .double-scroll {
+    gap: 0;
+    }
 
       .font-light {
         font-size: 28px;
@@ -23022,17 +23178,23 @@ img#tabBgImage {
     font-size: 20px;
   }
   .intro-block {
-        max-width: 100%;
+        max-width:66%;
     }
-        .block-empowering {
-        top: 78px;
+  .block-empowering {
+        top: 201px;
+        right: 31%;
     }
-        .block-connecting {
-        top: 90px;
+  .block-connecting {
+        top: 274px;
+        right: 42%;
     }
-      .training-section-title {
+  .training-section-title {
         padding-left: 68px;
     }
+        .msg-light {
+        font-size: 24px;
+        line-height: 0;
+        }
   .concept-element {
     width: 74px;
   }
@@ -23057,11 +23219,14 @@ img#tabBgImage {
         .organizational-goals {
         padding: 40px 20px;
     }
-    .overlap-triangle {
-        max-width: 100%;
+       .overlap-triangle {
+        max-width: 557px;
+        padding: 0 0 0 20px;
     }
+   
     .msg-bold {
-        font-size: 37px;
+        font-size: 24px;
+        line-height: 48px;
     }
     .cta-content {
         width: 53%;
@@ -23115,6 +23280,7 @@ img#tabBgImage {
 .potential-triangle {
     background-position: -176px 0;
 }
+  
 
 }
 
@@ -23174,42 +23340,6 @@ img#tabBgImage {
     min-height: 1426px;
 }
 }
-
-
-/* Exact target for 125% OS + 150% Browser Zoom (180dpi) */
-@media (min-resolution: 175dpi) and (max-resolution: 184dpi) {
-  /* Add your specific fixes for the hero banner here */
-}
-
-/* 
-
-/* 125% OS Scale + 125% Browser Zoom (Approx 1.56x or 150dpi) 
-@media (min-resolution: 145dpi) and (max-resolution: 155dpi) {
-.spectrum-bg {
-    top: 96px;
-}
-}
-
-
-Approx for 50% zoom 
-@media (min-resolution: 40dpi) and (max-resolution: 77dpi) {
-      .spectrum-bg {
-        top: -223px;
-    }
-}
-/* Approx for 70% zoom 
-@media (min-resolution: 60dpi) and (max-resolution: 79dpi) {
-      .spectrum-bg {
-        top: -181px;
-    }
-}
-    */
-
-
-
-
-
-
 
 
 
