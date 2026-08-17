@@ -1743,8 +1743,39 @@ display: flex;
 }
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+   
+        .spectrum-bg {
+        top:0;
+    }
+}
+
+
+/* Approx for 90% zoom */
+@media (min-resolution: 85dpi) and (max-resolution: 95dpi) {
     .spectrum-bg {
-        top: 0px;
+        top: -106px;
+    }
+    
+}
+
+/* Approx for 80% zoom */
+@media (min-resolution: 70dpi) and (max-resolution: 80dpi) {
+    .spectrum-bg {
+        top: -183px;
+    }
+}
+
+/* Approx for 75% zoom */
+@media (min-resolution: 71dpi) and (max-resolution: 74dpi) {
+        .spectrum-bg {
+        top: -225px;
+    }
+}
+
+/* Approx for 67% zoom */
+@media (min-resolution: 63dpi) and (max-resolution: 66dpi) {
+    .spectrum-bg {
+        top: -314px;
     }
 }
 
