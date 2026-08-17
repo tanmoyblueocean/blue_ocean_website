@@ -69,7 +69,7 @@ export default function ConGallery() {
 
       {/* Blue gradient triangle overlay — absolutely positioned over the slider */}
       <div className="spectrum-overlay">
-        <div className="spectrum-bg">
+        <div className="spectrum-bg banner-wide-left">
           <img
             src="/images/left-slide-gradent.png"
             alt="Gradient Spectrum"
