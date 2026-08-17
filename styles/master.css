@@ -1707,6 +1707,8 @@ display: flex;
   background-color: rgba(0, 0, 0, 0.8); /* Dark solid */
 }
 
+
+
 @media (max-width:1440px) {
 .spectrum-bg {
     top:95px;
@@ -22441,6 +22443,25 @@ color: #0D1896;
 /* Approx for 125% zoom */
 @media (min-resolution: 120dpi) and (max-resolution: 130dpi) {
 
+.text-blue-highlight {
+    margin-bottom: 19px !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+.feature-item p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+  .intro-block p {
+    font-size: 14px;
+    margin-bottom: 20px;
+      line-height: 21px;
+  }
+  .spectrum-section {
+    padding: 40px 0 30px;
+  }
+
   img#tabBgImage {
     margin-left: -4%;
 }
@@ -22478,7 +22499,7 @@ color: #0D1896;
 }
 
   .about-angle {
-    padding:180px 80px 20px 693px;
+    padding:100px 80px 20px 693px;
   }
 
   .spectrum-bg {
@@ -22594,7 +22615,7 @@ color: #0D1896;
     margin-top: 0;
 }
   .onlytrain {
-    margin-top: -212px;
+    margin-top: -175px;
 }
 .msg-light {
     font-size: 45px;
@@ -22656,13 +22677,15 @@ color: #0D1896;
 
 
 
+
 /* Approx for 150% zoom */
 @media (min-resolution: 140dpi) and (max-resolution: 160dpi) {
   .legacy-section .legacy-text {
     padding-left: 14%;
 }
       .spectrum-bg {
-        top: 128px;
+        /*top: 128px;*/
+        top: 142px;
     }
   .cert-full-name {
         font-size: 12px;
@@ -23278,6 +23301,7 @@ img#tabBgImage {
 }
 
 
+
 /* Approx for 90% zoom */
 @media (min-resolution: 85dpi) and (max-resolution: 95dpi) {
 
@@ -23365,7 +23389,17 @@ img#tabBgImage {
        }
 }
 
-
+@media (min-width: 1280px) {
+.banner-wide-left {
+inset-inline-start: 6rem;
+}
+}
+ 
+@media (min-width: 1281px) {
+.banner-wide-left {
+inset-inline-start: 11rem;
+}
+}
 
 
 
