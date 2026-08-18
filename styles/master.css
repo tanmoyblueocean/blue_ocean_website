@@ -1707,11 +1707,15 @@ display: flex;
   background-color: rgba(0, 0, 0, 0.8); /* Dark solid */
 }
 
+
+
+
 @media (min-width:1024px) {
 .spectrum-bg {
  top: 184px;
 }
 }
+
 
 @media (min-width:1117px) {
   .spectrum-bg {
@@ -1732,7 +1736,7 @@ display: flex;
 
 @media (min-width:1440px) {
 .spectrum-bg {
-    top: 56px;
+    top: 57px;
 }
 }
 
@@ -1741,8 +1745,36 @@ display: flex;
     top:-49px;
 }
 }
+
+@media (min-resolution: 1.7dppx) and (max-resolution: 1.8dppx) {
+    .spectrum-bg {
+        top: 178px;
+    }
+}
+
+
+/* Approx for 175% zoom */
+@media (min-resolution: 185dpi) and (max-resolution: 185dpi) {
+.spectrum-bg {
+     top: 178px;
+ }
+}
+/* Approx for 150% zoom */
+@media (min-resolution: 155dpi) and (max-resolution: 160dpi) {
+.spectrum-bg {
+        top: 159px;
+    }
+}
 /* Approx for 110% zoom */
 @media (min-resolution: 105dpi) and (max-resolution: 115dpi) {
+   
+        .spectrum-bg {
+        top:0;
+    }
+}
+
+/* Approx for 110% zoom */
+@media (min-resolution: 114dpi) and (max-resolution: 115dpi) {
    
         .spectrum-bg {
         top:0;
