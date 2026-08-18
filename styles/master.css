@@ -580,8 +580,12 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
         /* Revert to the CSS-drawn skewed background for mobile flexibility */
         background-image: none; 
         background: linear-gradient(135deg, #007bff, #5c20d4);
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        /*clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);*/
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
         border-radius: 0;
+    }
+    .lang-trigger svg {
+      display: none;
     }
 
     /* Hide the 3D grey corners on mobile */
@@ -837,14 +841,34 @@ border: 0 solid var(--sds-color-border-neutral-tertiary);
 
         /* --- Responsive Design --- */
         @media (max-width: 1024px) {
+
+  
             .desktop-nav {
-                display: none;
+                display: block;
+                padding-right: 30px;
             }
        
             .header-right {
                 gap: 15px;
             }
         }
+
+     @media (max-width: 1000px) {
+
+    .life-badge {
+        padding: 0 4px;
+        font-size: 7px;
+    }
+     
+  }
+
+
+           @media (max-width: 850px) {
+    .desktop-nav {
+                display: none;
+            }
+
+           }
 
         
 
@@ -1313,12 +1337,7 @@ line-height: normal;
 }
 
 @media (max-width: 1024px) {
-  .show-dek {
-  display:none;
-}
-.show-mob {
-  display:block;
-}
+
     .intro-block {
         max-width: 100%;
     }
@@ -1360,6 +1379,13 @@ line-height: normal;
     }
 }
 @media (max-width: 980px) {
+
+    .show-dek {
+  display:none;
+}
+.show-mob {
+  display:block;
+}
 
   .spectrum-container {
             flex-direction: column;
@@ -3412,6 +3438,15 @@ letter-spacing: -0.22px;
 }
 @media (max-width:1024px) {
 
+  .desktop-nav a {
+    font-size: 11px;
+}
+
+     .brand-logo img {
+        max-height: 19px;
+        padding-right: 40px;
+    }
+
     .event-sec .event-left-content {
         padding-left: 160px;
     }
@@ -3426,6 +3461,11 @@ letter-spacing: -0.22px;
 .event-sec .event-right-header h3 {
   font-size: 18px;
 }
+  }
+  @media (max-width:990px) {
+    .desktop-nav a {
+        font-size: 7px;
+    }
   }
 @media (max-width:980px) {
       .event-sec .event-left-content {
