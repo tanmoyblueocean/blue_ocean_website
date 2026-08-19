@@ -1808,12 +1808,23 @@ display: flex;
 }
 
 
+
 /* Approx for 90% zoom */
 @media (min-resolution: 85dpi) and (max-resolution: 95dpi) {
     .spectrum-bg {
         top: -106px;
     }
     
+}
+/* Target: 125% OS Scale + 90% Browser Zoom (Effective 1.125x / 108dpi) */
+@media (min-resolution: 107dpi) and (max-resolution: 109dpi),
+       (min-resolution: 1.12dppx) and (max-resolution: 1.13dppx) {
+    
+    .spectrum-bg {
+        top:10px;
+        /* Add any other specific styles for this zoom level here */
+    }
+
 }
 
 /* Approx for 80% zoom */
@@ -23443,6 +23454,17 @@ img#tabBgImage {
 
 }
 
+/* Target: 150% OS Scale + 90% Browser Zoom (Effective 1.35x / ~129.6dpi) */
+@media (min-resolution: 128dpi) and (max-resolution: 131dpi),
+       (min-resolution: 1.34dppx) and (max-resolution: 1.36dppx) {
+    
+    .spectrum-bg {
+        top:89px;
+        /* Add your styles for this specific zoom level here */
+    }
+
+}
+
 
 /* Approx for 80% zoom */
 @media (min-resolution: 70dpi) and (max-resolution: 80dpi) {
@@ -23466,6 +23488,17 @@ img#tabBgImage {
 
 }
 
+/* Target: 150% OS Scale + 80% Browser Zoom (Effective 1.2x / 115.2dpi) */
+@media (min-resolution: 114dpi) and (max-resolution: 117dpi),
+       (min-resolution: 1.19dppx) and (max-resolution: 1.21dppx) {
+    
+    .spectrum-bg {
+        top: 39px;
+        /* Add your styles for this specific zoom level here */
+    }
+
+}
+
 /* Approx for 75% zoom */
 @media (min-resolution: 71dpi) and (max-resolution: 74dpi) {
     
@@ -23475,6 +23508,18 @@ img#tabBgImage {
     }
  
 }
+
+/* Target: 125% OS Scale + 75% Browser Zoom (Effective 0.9375x / 90dpi) */
+@media (min-resolution: 89dpi) and (max-resolution: 91dpi),
+       (min-resolution: 0.93dppx) and (max-resolution: 0.95dppx) {
+    
+    .spectrum-bg {
+        top: -83px;
+        /* Add your styles for this specific zoom level here */
+    }
+
+}
+
 
 /* Approx for 67% zoom */
 @media (min-resolution: 63dpi) and (max-resolution: 66dpi) {
@@ -23490,6 +23535,16 @@ img#tabBgImage {
     min-height: 1426px;
 }
 }
+
+/* Target: 125% OS Scale + 67% Browser Zoom (Effective 0.8375x / 80.4dpi) */
+@media (min-resolution: 79dpi) and (max-resolution: 82dpi),
+       (min-resolution: 0.82dppx) and (max-resolution: 0.85dppx) {
+    
+    .spectrum-bg {
+        top: -155px;
+        /* Add your styles for this specific zoom level here */
+    }
+  }
 
 /* Targets exactly 1.75x overall scale (which equals 168 DPI) */
 @media (max-width: 900px) {
